@@ -17,7 +17,7 @@ import org.jboss.netty.handler.codec.http.HttpVersion;
 import org.jboss.netty.util.CharsetUtil;
 
 /**
- * {@link SimpleChannelUpstreamHandler} der einen {@link HttpRequest} entgegennimmt und ein
+ * {@link SimpleChannelUpstreamHandler} der einen {@link HttpRequest} entgegen nimmt und ein
  * {@link HttpResponse} zurueck and den Client schickt.
  * 
  * @author Norman Maurer <norman@apache.org>

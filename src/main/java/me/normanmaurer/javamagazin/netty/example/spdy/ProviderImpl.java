@@ -29,7 +29,7 @@ class ProviderImpl implements ServerProvider {
 
     @Override
     public void unsupported() {
-        // als standard protocol HTTP 1.1 verwenden
+        // Als standard protocol HTTP 1.1 verwenden
         protocol = "http/1.1";
     }
 
