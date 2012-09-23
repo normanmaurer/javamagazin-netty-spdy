@@ -49,7 +49,7 @@
         <configuration>
           <executable>java</executable>
           <arguments>
-            <argument>-Xbootclasspath/p:/Users/norman/.m2/repository/org/mortbay/jetty/npn/npn-boot/8.1.2.v20120308/npn-boot-8.1.2.v20120308.jar</argument>
+            <argument>-Xbootclasspath/p:${settings.localRepository}/org/mortbay/jetty/npn/npn-boot/${npn.version}/npn-boot-${npn.version}.jar</argument>
             <argument>-classpath</argument>
             <classpath/>
             <argument>me.normanmaurer.javamagazin.netty.example.spdy.SpdyServer</argument>
@@ -69,20 +69,20 @@
     <dependency>
       <groupId>org.eclipse.jetty.npn</groupId>
       <artifactId>npn-api</artifactId>
-      <version>8.1.2.v20120308</version>
+      <version>${npn.version}</version>
     </dependency>
     <dependency>
       <groupId>org.mortbay.jetty.npn</groupId>
       <artifactId>npn-boot</artifactId>
-      <version>8.1.2.v20120308</version>
+      <version>${npn.version}</version>
       <scope>runtime</scope>
-      <type>jar</type>
     </dependency>
   </dependencies>
   
   <properties>
     <target.jdk>1.7</target.jdk>
     <netty.version>3.5.8.Final-SNAPSHOT</netty.version>
+    <npn.version>8.1.2.v20120308</npn.version>
     <port>8888</port>
   </properties>
 </project>
