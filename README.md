@@ -1,2 +1,0 @@
-javamagazin-netty-spdy
-======================
