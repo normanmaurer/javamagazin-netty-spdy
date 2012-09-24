@@ -21,7 +21,7 @@ public class SpdyOrHttpChooserImpl extends SpdyOrHttpChooser {
 
     @Override
     protected SelectedProtocol getProtocol(SSLEngine engine) {
-        // Anhand des ausgewählten Protokolls wird das richtige ausgewaehlt.
+        // Anhand des ausgewaehlten Protokolls wird das richtige ausgewaehlt.
         ProviderImpl provider = (ProviderImpl) NextProtoNego.get(engine);
         String protocol = provider.getSelectedProtocol();
         if (protocol == null) {
