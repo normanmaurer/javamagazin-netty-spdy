@@ -78,6 +78,13 @@
       <scope>runtime</scope>
     </dependency>
   </dependencies>
+
+  <repositories>
+    <repository>
+      <id>netty-snapshots</id>
+      <url>http://repository-netty.forge.cloudbees.com/snapshot/</url>
+    </repository>
+  </repositories>
   
   <properties>
     <target.jdk>1.7</target.jdk>
