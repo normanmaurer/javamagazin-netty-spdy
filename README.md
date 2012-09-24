@@ -1,4 +1,4 @@
-javamagazin-netty-ws
+javamagazin-netty-spdy
 =================
 
 Das hier gezeigte Programm ist Bestandteil des Java Magazin Artikels "Netty - SPDY".
