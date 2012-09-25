@@ -50,5 +50,4 @@ public class SpdyOrHttpChooserImpl extends SpdyOrHttpChooser {
     protected ChannelUpstreamHandler createHttpRequestHandlerForSpdy() {
         return new SpdyHttpRequestHandler();
     }
-
 }
