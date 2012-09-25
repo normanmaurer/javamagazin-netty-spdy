@@ -34,5 +34,4 @@ public class SpdyChannelPipelineFactory implements ChannelPipelineFactory {
         pipeline.addLast("chooser", new SpdyOrHttpChooserImpl(1024 * 1024, 1024 * 1024));
         return pipeline;
     }
-
 }

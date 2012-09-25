@@ -6,6 +6,12 @@ import org.jboss.netty.bootstrap.ServerBootstrap;
 import org.jboss.netty.channel.ChannelFactory;
 import org.jboss.netty.channel.socket.nio.NioServerSocketChannelFactory;
 
+/**
+ * Server der Webseiten via SPDY und HTTP zur Verfuegung stellt.
+ * 
+ * @author Norman Maurer <norman@apache.org>
+ *
+ */
 public class SpdyServer {
 
     private final int port;
@@ -14,6 +20,9 @@ public class SpdyServer {
         this.port = port;
     }
 
+    /**
+     * Starten des Servers
+     */
     public void startUp() {
         ChannelFactory factory = new NioServerSocketChannelFactory();
         ServerBootstrap sb = new ServerBootstrap(factory);
